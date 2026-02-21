@@ -1,3 +1,2 @@
-export { ArkChatCompletions } from './chat-completions';
-
-export * from './chat-completions';
+export { ArkChatCompletions } from '@/chat-completions';
+export * from '@/types/chat-openapi';
