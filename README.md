@@ -4,9 +4,7 @@
 
 官方文档: https://www.volcengine.com/docs/82379/1494384?lang=zh
 
-> 声明: 非官方 SDK
-
-官方未提供 TypeScript SDK，且 openai sdk 兼容方案诸多属性不支持，如 `reasoning_content`，并且需要引入 `openapi` 库才能使用。
+> 声明: 非官方 SDK. 官方未提供 TypeScript SDK，且 openai sdk 兼容方案诸多属性不支持，如 `reasoning_content`，并且需要引入 `openapi` 库才能使用。
 
 基于火山引擎 openapi 规范实现的 TypeScript SDK，仅支持 Chat API （对话 API）。
 
