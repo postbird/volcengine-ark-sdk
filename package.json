@@ -1,6 +1,6 @@
 {
   "name": "volcengine-ark-sdk",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "description": "火山引擎 | 火山方舟 TypeScript SDK",
   "keywords": [
@@ -12,7 +12,7 @@
   "author": "Alen Lee",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ptbird/volcengine-ark-sdk"
+    "url": "https://github.com/postbird/volcengine-ark-sdk"
   },
   "exports": {
     ".": {
