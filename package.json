@@ -1,6 +1,6 @@
 {
   "name": "volcengine-ark-sdk",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "type": "module",
   "description": "火山引擎 | 火山方舟 TypeScript SDK",
   "keywords": [
@@ -27,6 +27,8 @@
     "dist"
   ],
   "scripts": {
+    "release": "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm run build",
+    "test": "echo \"no test specified\"",
     "build": "rslib build",
     "check": "biome check --write",
     "dev": "rslib build --watch",

@@ -213,7 +213,3 @@ const reasoningContent = chunk.choices[0].delta.reasoning_content;
     }
   }
 ```
-
-# 开发
-
-pnpm dev
