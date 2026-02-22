@@ -5,7 +5,7 @@ on:
     types: [created]
 
 permissions:
-  id-token: write   # 必须！用于生成 OIDC token
+  id-token: write 
   contents: read
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '24'            # 建议升级到 24，确保 npm CLI >= 11.5.1
+          node-version: '24' 
           registry-url: 'https://registry.npmjs.org'
       - run: npm run release
-      - run: npm publish                # 不需要 NODE_AUTH_TOKEN！
+      - run: npm publish     
