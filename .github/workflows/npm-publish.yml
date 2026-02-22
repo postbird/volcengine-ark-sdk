@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm run ci
+      - run: npm run release
 
   publish-npm:
     needs: build
@@ -31,7 +31,7 @@ jobs:
           VERSION="${GITHUB_REF#refs/tags/}"
           VERSION="${VERSION#v}"
           npm version "$VERSION" --no-git-tag-version
-      - run: npm run ci
+      - run: npm run release
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
