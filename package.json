@@ -27,6 +27,8 @@
     "dist"
   ],
   "scripts": {
+    "ci": "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm run build",
+    "test": "echo \"no test specified\"",
     "build": "rslib build",
     "check": "biome check --write",
     "dev": "rslib build --watch",
