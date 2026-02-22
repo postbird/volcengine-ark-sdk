@@ -1,6 +1,6 @@
 {
   "name": "volcengine-ark-sdk",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "type": "module",
   "description": "火山引擎 | 火山方舟 TypeScript SDK",
   "keywords": [
