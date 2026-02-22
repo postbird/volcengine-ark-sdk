@@ -126,6 +126,8 @@ export interface ArkAssistantMessage {
   role: 'assistant';
   /** 模型消息的内容 */
   content: string;
+  // reasoning
+  reasoning_content?: string;
   /** 模型是否调用了工具 */
   tool_calls?: ArkToolCall[];
   /** 工具调用的 ID */
