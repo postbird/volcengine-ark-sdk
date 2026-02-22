@@ -1,13 +1,9 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
 name: Node.js Package
 
 on:
   release:
     types: [created]
 
-# 必须添加 OIDC 权限
 permissions:
   id-token: write   # 必须！用于生成 OIDC token
   contents: read
@@ -19,9 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          registry-url: https://registry.npmjs.org/
+          node-version: '24'            # 建议升级到 24，确保 npm CLI >= 11.5.1
+          registry-url: 'https://registry.npmjs.org'
       - run: npm run release
-      - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # 必须！npm 认证用
+      - run: npm publish                # 不需要 NODE_AUTH_TOKEN！
