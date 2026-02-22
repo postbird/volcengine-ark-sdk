@@ -7,6 +7,11 @@ on:
   release:
     types: [created]
 
+# 必须添加 OIDC 权限
+permissions:
+  id-token: write   # 必须！用于生成 OIDC token
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
